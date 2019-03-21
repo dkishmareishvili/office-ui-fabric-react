@@ -8888,7 +8888,7 @@ interface IModalProps extends React.ClassAttributes<ModalBase>, IWithResponsiveM
   isDarkOverlay?: boolean;
   isModeless?: boolean;
   isOpen?: boolean;
-  layerProps?: ILayerProps;
+  layer?: ILayerProps;
   onDismiss?: (ev?: React.MouseEvent<HTMLButtonElement>) => any;
   onDismissed?: () => any;
   // @deprecated

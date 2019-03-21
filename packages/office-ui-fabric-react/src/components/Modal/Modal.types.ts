@@ -55,7 +55,7 @@ export interface IModalProps extends React.ClassAttributes<ModalBase>, IWithResp
   /**
    * Props to be passed through to Layer
    */
-  layerProps?: ILayerProps;
+  layer?: ILayerProps;
 
   /**
    * Whether the dialog can be light dismissed by clicking outside the dialog (on the overlay).
@@ -119,7 +119,7 @@ export type IModalStyleProps = Required<Pick<IModalProps, 'theme'>> &
     /** Positioning of modal on first render */
     modalRectangleTop?: number;
     /** Props for layer element */
-    layerProps?: ILayerProps;
+    layer?: ILayerProps;
   };
 
 export interface IModalStyles {

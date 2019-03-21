@@ -114,7 +114,7 @@ export class ModalBase extends BaseComponent<IModalProps, IDialogState> implemen
       isClickableOutsideFocusTrap,
       isDarkOverlay,
       onDismiss,
-      layerProps,
+      layer,
       responsiveMode,
       titleAriaId,
       styles,
@@ -141,13 +141,13 @@ export class ModalBase extends BaseComponent<IModalProps, IDialogState> implemen
       modalRectangleTop,
       topOffsetFixed,
       isModeless,
-      layerProps
+      layer
     });
 
     const mergedLayerProps = {
       ...DefaultLayerProps,
-      ...this.props.layerProps,
-      onLayerDidMount: layerProps && layerProps.onLayerDidMount ? layerProps.onLayerDidMount : onLayerDidMount,
+      ...this.props.layer,
+      onLayerDidMount: layer && layer.onLayerDidMount ? layer.onLayerDidMount : onLayerDidMount,
       insertFirst: isModeless,
       className: classNames.layer
     };

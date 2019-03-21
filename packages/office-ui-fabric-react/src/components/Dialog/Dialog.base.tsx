@@ -88,7 +88,7 @@ export class DialogBase extends BaseComponent<IDialogProps, {}> {
     } = this.props;
 
     const mergedLayerProps: ILayerProps = {
-      ...(modalProps ? modalProps.layerProps : { onLayerDidMount })
+      ...(modalProps ? modalProps.layer : { onLayerDidMount })
     };
     if (onLayerDidMount && !mergedLayerProps.onLayerDidMount) {
       mergedLayerProps.onLayerDidMount = onLayerDidMount;
